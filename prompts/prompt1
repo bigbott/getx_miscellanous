@@ -1,0 +1,12 @@
+
+Create CheckmarkListTile class
+It should extend AbstractSettingsTile from the settings_ui package 
+and use animated_checkmark package to draw the checkmark. 
+
+it should have isMultiSelect property, which allows to switch between 
+single select and multi select behavior. 
+
+The purpose of the widget is to expand the settings_ui package and 
+provide user with single/multiple select from the list of options
+
+both package already added 

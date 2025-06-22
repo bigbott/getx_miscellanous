@@ -1,0 +1,10 @@
+In the audio module create the page with 
+
+Stack widget that contains scrollabe long text. 
+With Positioned widget that contains audio player controls: 
+play/stop IconButton and Slider to show the progress. 
+Slider should also can be used for setting position. 
+
+Use GetBuilders
+Use audioplayers implementation for playing audio
+audio file from assets/audio/text.mp3
