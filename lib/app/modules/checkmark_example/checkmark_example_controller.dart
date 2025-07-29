@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:getx_miscellanous/app/common/global_widgets/checkmark_list_tile.dart';
+import 'package:getx_miscellanous/app/common/widgets/checkmark_list_tile.dart';
 
 class CheckmarkExampleController extends GetxController {
   var _singleSelectOptions = [

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:getx_miscellanous/app/common/global_widgets/checkmark_list_tile.dart';
+import 'package:getx_miscellanous/app/common/widgets/checkmark_list_tile.dart';
 import 'package:getx_miscellanous/app/modules/checkmark_example/checkmark_example_controller.dart';
 import 'package:settings_ui/settings_ui.dart';
 
