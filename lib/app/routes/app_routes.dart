@@ -31,6 +31,8 @@ abstract class Routes {
   static const ASYNC_EXAMPLES = _Paths.ASYNC_EXAMPLES;
   static const ROUNDED_PROGRESS_BAR = _Paths.ROUNDED_PROGRESS_BAR;
   static const LIQUID_PROGRESS_BAR = _Paths.LIQUID_PROGRESS_BAR;
+  static const STAR_MENU_DEMO = _Paths.STAR_MENU_DEMO;
+  static const STAR_MENU_OFFICIAL = _Paths.STAR_MENU_OFFICIAL;
 }
 
 abstract class _Paths {
@@ -63,4 +65,6 @@ abstract class _Paths {
   static const ASYNC_EXAMPLES = '/async-examples';
   static const ROUNDED_PROGRESS_BAR = '/rounded-progress-bar';
   static const LIQUID_PROGRESS_BAR = '/liquid-progress-bar';
+  static const STAR_MENU_DEMO = '/star-menu-demo';
+  static const STAR_MENU_OFFICIAL = '/star-menu-official';
 }

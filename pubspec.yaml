@@ -20,6 +20,7 @@ dependencies:
   #liquid_progress_indicator: ^0.4.0
   pinput: ^5.0.1
   settings_ui: ^2.0.2
+  star_menu: ^4.0.1
 
 dev_dependencies:
   flutter_test:

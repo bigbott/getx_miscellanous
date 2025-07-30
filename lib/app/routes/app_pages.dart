@@ -1,7 +1,5 @@
 import 'package:get/get.dart';
 import 'package:get/get_navigation/src/routes/default_transitions.dart';
-import 'package:getx_miscellanous/app/modules/home/home_binding.dart';
-import 'package:getx_miscellanous/app/modules/home/home_view.dart';
 
 import '../modules/android_settings/android_settings_binding.dart';
 import '../modules/android_settings/android_settings_view.dart';
@@ -33,6 +31,8 @@ import '../modules/gesture_swipe/gesture_swipe_binding.dart';
 import '../modules/gesture_swipe/gesture_swipe_view.dart';
 import '../modules/grammary/grammary_binding.dart';
 import '../modules/grammary/grammary_view.dart';
+import '../modules/home/home_binding.dart';
+import '../modules/home/home_view.dart';
 import '../modules/inkwell/inkwell_binding.dart';
 import '../modules/inkwell/inkwell_view.dart';
 import '../modules/liquid_progress_bar/liquid_progress_bar_binding.dart';
@@ -48,6 +48,10 @@ import '../modules/rounded_progress_bar/rounded_progress_bar_binding.dart';
 import '../modules/rounded_progress_bar/rounded_progress_bar_view.dart';
 import '../modules/settings_ui/settings_ui_binding.dart';
 import '../modules/settings_ui/settings_ui_view.dart';
+import '../modules/star_menu_demo/star_menu_demo_binding.dart';
+import '../modules/star_menu_demo/star_menu_demo_view.dart';
+import '../modules/star_menu_official/star_menu_official_binding.dart';
+import '../modules/star_menu_official/star_menu_official_view.dart';
 import '../modules/web_chrome_settings/web_chrome_settings_binding.dart';
 import '../modules/web_chrome_settings/web_chrome_settings_view.dart';
 import '../modules/welcome/welcome_binding.dart';
@@ -190,6 +194,16 @@ class AppPages {
       name: _Paths.LIQUID_PROGRESS_BAR,
       page: () => const LiquidProgressBarView(),
       binding: LiquidProgressBarBinding(),
+    ),
+    GetPage(
+      name: _Paths.STAR_MENU_DEMO,
+      page: () => StarMenuDemoView(),
+      binding: StarMenuDemoBinding(),
+    ),
+    GetPage(
+      name: _Paths.STAR_MENU_OFFICIAL,
+      page: () => const StarMenuOfficialView(),
+      binding: StarMenuOfficialBinding(),
     ),
   ];
 }

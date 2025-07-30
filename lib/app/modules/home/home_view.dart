@@ -42,6 +42,8 @@ class HomeView extends GetView<HomeController> {
                 NavButton(route: Routes.COLOR_EXAMPLES, label: 'COLOR_EXAMPLES'),
                 NavButton(route: Routes.ASYNC_EXAMPLES, label: 'ASYNC_EXAMPLES'),
                 NavButton(route: Routes.LIQUID_PROGRESS_BAR, label: 'LIQUID_PROGRESS_BAR'),
+                NavButton(route: Routes.STAR_MENU_DEMO, label: 'STAR_MENU_DEMO'),
+                NavButton(route: Routes.STAR_MENU_OFFICIAL, label: 'STAR_MENU_OFFICIAL'),
               ],
             ),
           ),

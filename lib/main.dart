@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       // theme: ThemeData(
       //   filledButtonTheme: FilledButtonThemeData(style: Styles.red),
       // ),
-    ).withDevicePreview(true);
+    ).withDevicePreview(false);
   }
 }
 
