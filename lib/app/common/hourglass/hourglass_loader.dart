@@ -22,14 +22,14 @@ class HourglassLoader extends StatefulWidget {
   final Color sandColor;
   
   const HourglassLoader({
-    Key? key,
+    super.key,
     this.duration = const Duration(seconds: 3),
     this.width = 100,
     this.height = 150,
     this.topBottomColor = const Color(0xFFA0A0A0),
     this.glassColor = const Color(0xFFB8E6E8),
     this.sandColor = const Color(0xFFF4A460),
-  }) : super(key: key);
+  });
   
   @override
   State<HourglassLoader> createState() => _HourglassLoaderState();
@@ -59,7 +59,7 @@ class _HourglassLoaderState extends State<HourglassLoader> with SingleTickerProv
     _rotationAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(
       CurvedAnimation(
         parent: _animationController,
-        curve: Interval(0.9, 1.0, curve: Curves.easeInOut),
+        curve: Interval(0.8, 1.0, curve: Curves.easeInOut),
       ),
     );
     
@@ -98,8 +98,6 @@ class _HourglassLoaderState extends State<HourglassLoader> with SingleTickerProv
             topBottomColor: widget.topBottomColor,
             glassColor: widget.glassColor,
             sandColor: widget.sandColor,
-            // colors: [widget.sandColor, widget.sandColor],
-            // colorStops: [0.0, 1.0],
           ),
         );
       },

@@ -7,12 +7,6 @@ class HourglassPainter extends CustomPainter {
   /// The fill amount of the hourglass (0.0 to 1.0)
   final double fillAmount;
 
-  // /// The colors for the gradient fill
-  // final List<Color> colors;
-
-  // /// The color stops for the gradient
-  // final List<double> colorStops;
-
   /// Color of the top and bottom lines
   final Color topBottomColor;
 
@@ -31,16 +25,18 @@ class HourglassPainter extends CustomPainter {
     double hourglassInset = size.width / 10;
     double hourglassHalfHeight = (size.height / 2) - hourglassInset;
 
+  
+
     final outlinePainter = Paint()
       ..color = glassColor
       ..strokeCap = StrokeCap.round
-      ..strokeWidth = 5
+      ..strokeWidth = size.width / 20
       ..style = PaintingStyle.stroke;
 
     final outlinePainter2 = Paint()
       ..color = topBottomColor
       ..strokeCap = StrokeCap.round
-      ..strokeWidth = 8
+      ..strokeWidth = size.width / 12
       ..style = PaintingStyle.stroke;
 
     final contentPainter = Paint()
@@ -77,14 +73,17 @@ class HourglassPainter extends CustomPainter {
     double topContentEndWidthOffset = getTopContentWidthOffset(
         size.width, topEndHeight, hourglassHalfHeight, hourglassInset);
 
-    topContent.moveTo(topContentStartWidthOffset, topStartHeight);
-    topContent.arcToPoint(Offset(hourglassInset + topContentEndWidthOffset, topEndHeight),
-        radius: Radius.circular(hourglassCurve), clockwise: false);
-    topContent.arcToPoint(
-        Offset((size.width - hourglassInset) - topContentEndWidthOffset, topEndHeight));
-    topContent.arcToPoint(Offset(size.width - topContentStartWidthOffset, topStartHeight),
-        radius: Radius.circular(hourglassCurve), clockwise: false);
-    topContent.close();
+    // Only create the path if there's sand in the top part
+    if (fillAmount < 0.99) {
+      topContent.moveTo(topContentStartWidthOffset, topStartHeight);
+      topContent.arcToPoint(Offset(hourglassInset + topContentEndWidthOffset, topEndHeight),
+          radius: Radius.circular(hourglassCurve), clockwise: false);
+      topContent.arcToPoint(
+          Offset((size.width - hourglassInset) - topContentEndWidthOffset, topEndHeight));
+      topContent.arcToPoint(Offset(size.width - topContentStartWidthOffset, topStartHeight),
+          radius: Radius.circular(hourglassCurve), clockwise: false);
+      topContent.close();
+    }
 
     final bottomContent = Path();
     double bottomStartHeight = size.height - 12;
@@ -133,7 +132,10 @@ class HourglassPainter extends CustomPainter {
       ..strokeWidth = 1;
 
     canvas.drawPath(fallingSand, contentPainter);
-    canvas.drawPath(topContent, contentPainter);
+    // Only draw topContent if there's sand in the top part
+    if (fillAmount < 0.99) {
+      canvas.drawPath(topContent, contentPainter);
+    }
     canvas.drawPath(bottomContent, bottomContentPainter);
     canvas.drawPath(outline, outlinePainter);
     canvas.drawLine(Offset(0, 0), Offset(size.width, 0), outlinePainter2);
@@ -151,8 +153,8 @@ class HourglassPainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) {
-    return true;
+  bool shouldRepaint(covariant HourglassPainter oldDelegate) {
+    return oldDelegate.fillAmount != fillAmount;
   }
 }
 
@@ -160,12 +162,6 @@ class HourglassPainter extends CustomPainter {
 class Hourglass extends StatelessWidget {
   /// The fill amount of the hourglass (0.0 to 1.0)
   final double fillAmount;
-
-  // /// The colors for the gradient fill
-  // final List<Color> colors;
-
-  // /// The color stops for the gradient
-  // final List<double> colorStops;
 
   /// The width of the hourglass
   final double width;
@@ -185,8 +181,6 @@ class Hourglass extends StatelessWidget {
   const Hourglass({
     super.key,
     required this.fillAmount,
-    // this.colors = const [Colors.blue, Colors.green, Colors.red],
-    // this.colorStops = const [0.2, 0.6, 1.0],
     this.width = 100,
     this.height = 150,
     required this.topBottomColor,
@@ -202,8 +196,6 @@ class Hourglass extends StatelessWidget {
       child: CustomPaint(
         painter: HourglassPainter(
           fillAmount,
-          // colors,
-          // colorStops,
           topBottomColor,
           glassColor,
           sandColor,

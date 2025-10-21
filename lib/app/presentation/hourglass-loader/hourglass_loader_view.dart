@@ -7,13 +7,16 @@ class HourglassLoaderView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.green.shade900,
       body: Padding(
         padding: const EdgeInsets.all(18.0),
         child: Center(
             child: HourglassLoader(
-          duration: Duration(seconds: 5),
+          duration: Duration(seconds: 2),
           width: 120,
           height: 180,
+          topBottomColor: Colors.grey.shade400,
+          glassColor: Colors.lightBlueAccent.shade200,
           sandColor: Colors.amber,
         )),
       ),
