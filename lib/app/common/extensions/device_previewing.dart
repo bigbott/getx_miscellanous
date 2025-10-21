@@ -6,7 +6,7 @@ import 'package:get/get.dart';
 extension DevicePreviewing on GetMaterialApp {
   DevicePreview withDevicePreview(bool enabled) {
      return DevicePreview(
-      enabled: enabled,
+      enabled: enabled,      
       builder: (context) => this, 
     );
    }

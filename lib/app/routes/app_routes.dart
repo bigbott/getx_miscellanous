@@ -33,6 +33,10 @@ abstract class Routes {
   static const LIQUID_PROGRESS_BAR = _Paths.LIQUID_PROGRESS_BAR;
   static const STAR_MENU_DEMO = _Paths.STAR_MENU_DEMO;
   static const STAR_MENU_OFFICIAL = _Paths.STAR_MENU_OFFICIAL;
+  static const MIX1 = _Paths.MIX1;
+  static const M3_SHAPES = _Paths.M3_SHAPES;
+  static const HOURGLASS_OFFICIAL = _Paths.HOURGLASS_OFFICIAL;
+  static const HOURGLASS_LOADER = _Paths.HOURGLASS_LOADER;
 }
 
 abstract class _Paths {
@@ -67,4 +71,8 @@ abstract class _Paths {
   static const LIQUID_PROGRESS_BAR = '/liquid-progress-bar';
   static const STAR_MENU_DEMO = '/star-menu-demo';
   static const STAR_MENU_OFFICIAL = '/star-menu-official';
+  static const MIX1 = '/mix1';
+  static const M3_SHAPES = '/m3-shapes';
+  static const HOURGLASS_OFFICIAL = '/hourglass-official';
+  static const HOURGLASS_LOADER = '/hourglass-loader';
 }

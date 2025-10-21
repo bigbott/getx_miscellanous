@@ -13,11 +13,13 @@ dependencies:
   device_preview: ^1.2.0
   flutter:
     sdk: flutter
+  flutter_m3shapes: ^1.0.0+1
   flutter_rounded_progress_bar: ^0.3.2
   get: ^4.7.2
   just_audio: ^0.9.46
   just_audio_windows: ^0.2.2
   #liquid_progress_indicator: ^0.4.0
+  mix: ^1.7.0
   pinput: ^5.0.1
   settings_ui: ^2.0.2
   star_menu: ^4.0.1
@@ -29,8 +31,9 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-  assets:
-  - assets/audio/
+  assets: 
+    - assets/images/
+    - assets/audio/
 
 get_cli:
     sub_folder: false  

@@ -1,61 +1,68 @@
 import 'package:get/get.dart';
 import 'package:get/get_navigation/src/routes/default_transitions.dart';
 
-import '../modules/android_settings/android_settings_binding.dart';
-import '../modules/android_settings/android_settings_view.dart';
-import '../modules/async_examples/async_examples_binding.dart';
-import '../modules/async_examples/async_examples_view.dart';
-import '../modules/audio/audio_binding.dart';
-import '../modules/audio/audio_view.dart';
-import '../modules/button_style/button_style_binding.dart';
-import '../modules/button_style/button_style_view.dart';
-import '../modules/buttons/buttons_binding.dart';
-import '../modules/buttons/buttons_view.dart';
-import '../modules/checkmark_example/checkmark_example_binding.dart';
-import '../modules/checkmark_example/checkmark_example_view.dart';
-import '../modules/color_examples/color_examples_binding.dart';
-import '../modules/color_examples/color_examples_view.dart';
-import '../modules/example/example_binding.dart';
-import '../modules/example/example_view.dart';
-import '../modules/gallery/gallery_binding.dart';
-import '../modules/gallery/gallery_view.dart';
-import '../modules/gesture_drag/gesture_drag_binding.dart';
-import '../modules/gesture_drag/gesture_drag_view.dart';
-import '../modules/gesture_official/gesture_official_binding.dart';
-import '../modules/gesture_official/gesture_official_view.dart';
-import '../modules/gesture_pan/gesture_pan_binding.dart';
-import '../modules/gesture_pan/gesture_pan_view.dart';
-import '../modules/gesture_pinch/gesture_pinch_binding.dart';
-import '../modules/gesture_pinch/gesture_pinch_view.dart';
-import '../modules/gesture_swipe/gesture_swipe_binding.dart';
-import '../modules/gesture_swipe/gesture_swipe_view.dart';
-import '../modules/grammary/grammary_binding.dart';
-import '../modules/grammary/grammary_view.dart';
-import '../modules/home/home_binding.dart';
-import '../modules/home/home_view.dart';
-import '../modules/inkwell/inkwell_binding.dart';
-import '../modules/inkwell/inkwell_view.dart';
-import '../modules/liquid_progress_bar/liquid_progress_bar_binding.dart';
-import '../modules/liquid_progress_bar/liquid_progress_bar_view.dart';
-import '../modules/list/list_binding.dart';
-import '../modules/list/list_view.dart';
-import '../modules/my/my_view.dart';
-import '../modules/notifications/notifications_binding.dart';
-import '../modules/notifications/notifications_view.dart';
-import '../modules/pin_code/pin_code_binding.dart';
-import '../modules/pin_code/pin_code_view.dart';
-import '../modules/rounded_progress_bar/rounded_progress_bar_binding.dart';
-import '../modules/rounded_progress_bar/rounded_progress_bar_view.dart';
-import '../modules/settings_ui/settings_ui_binding.dart';
-import '../modules/settings_ui/settings_ui_view.dart';
-import '../modules/star_menu_demo/star_menu_demo_binding.dart';
-import '../modules/star_menu_demo/star_menu_demo_view.dart';
-import '../modules/star_menu_official/star_menu_official_binding.dart';
-import '../modules/star_menu_official/star_menu_official_view.dart';
-import '../modules/web_chrome_settings/web_chrome_settings_binding.dart';
-import '../modules/web_chrome_settings/web_chrome_settings_view.dart';
-import '../modules/welcome/welcome_binding.dart';
-import '../modules/welcome/welcome_view.dart';
+import '../presentation/android_settings/android_settings_binding.dart';
+import '../presentation/android_settings/android_settings_view.dart';
+import '../presentation/async_examples/async_examples_binding.dart';
+import '../presentation/async_examples/async_examples_view.dart';
+import '../presentation/audio/audio_binding.dart';
+import '../presentation/audio/audio_view.dart';
+import '../presentation/button_style/button_style_binding.dart';
+import '../presentation/button_style/button_style_view.dart';
+import '../presentation/buttons/buttons_binding.dart';
+import '../presentation/buttons/buttons_view.dart';
+import '../presentation/checkmark_example/checkmark_example_binding.dart';
+import '../presentation/checkmark_example/checkmark_example_view.dart';
+import '../presentation/color_examples/color_examples_binding.dart';
+import '../presentation/color_examples/color_examples_view.dart';
+import '../presentation/example/example_binding.dart';
+import '../presentation/example/example_view.dart';
+import '../presentation/gallery/gallery_binding.dart';
+import '../presentation/gallery/gallery_view.dart';
+import '../presentation/gesture_drag/gesture_drag_binding.dart';
+import '../presentation/gesture_drag/gesture_drag_view.dart';
+import '../presentation/gesture_official/gesture_official_binding.dart';
+import '../presentation/gesture_official/gesture_official_view.dart';
+import '../presentation/gesture_pan/gesture_pan_binding.dart';
+import '../presentation/gesture_pan/gesture_pan_view.dart';
+import '../presentation/gesture_pinch/gesture_pinch_binding.dart';
+import '../presentation/gesture_pinch/gesture_pinch_view.dart';
+import '../presentation/gesture_swipe/gesture_swipe_binding.dart';
+import '../presentation/gesture_swipe/gesture_swipe_view.dart';
+import '../presentation/grammary/grammary_binding.dart';
+import '../presentation/grammary/grammary_view.dart';
+import '../presentation/home/home_binding.dart';
+import '../presentation/home/home_view.dart';
+import '../presentation/hourglass-loader/hourglass_loader_binding.dart';
+import '../presentation/hourglass-loader/hourglass_loader_view.dart';
+import '../presentation/hourglass/hourglass_official_view.dart';
+import '../presentation/inkwell/inkwell_binding.dart';
+import '../presentation/inkwell/inkwell_view.dart';
+import '../presentation/liquid_progress_bar/liquid_progress_bar_binding.dart';
+import '../presentation/liquid_progress_bar/liquid_progress_bar_view.dart';
+import '../presentation/list/list_binding.dart';
+import '../presentation/list/list_view.dart';
+import '../presentation/m3-shapes/m3_shapes_binding.dart';
+import '../presentation/m3-shapes/m3_shapes_view.dart';
+import '../presentation/mix1/mix1_binding.dart';
+import '../presentation/mix1/mix1_view.dart';
+import '../presentation/my/my_view.dart';
+import '../presentation/notifications/notifications_binding.dart';
+import '../presentation/notifications/notifications_view.dart';
+import '../presentation/pin_code/pin_code_binding.dart';
+import '../presentation/pin_code/pin_code_view.dart';
+import '../presentation/rounded_progress_bar/rounded_progress_bar_binding.dart';
+import '../presentation/rounded_progress_bar/rounded_progress_bar_view.dart';
+import '../presentation/settings_ui/settings_ui_binding.dart';
+import '../presentation/settings_ui/settings_ui_view.dart';
+import '../presentation/star_menu_demo/star_menu_demo_binding.dart';
+import '../presentation/star_menu_demo/star_menu_demo_view.dart';
+import '../presentation/star_menu_official/star_menu_official_binding.dart';
+import '../presentation/star_menu_official/star_menu_official_view.dart';
+import '../presentation/web_chrome_settings/web_chrome_settings_binding.dart';
+import '../presentation/web_chrome_settings/web_chrome_settings_view.dart';
+import '../presentation/welcome/welcome_binding.dart';
+import '../presentation/welcome/welcome_view.dart';
 
 part 'app_routes.dart';
 
@@ -204,6 +211,25 @@ class AppPages {
       name: _Paths.STAR_MENU_OFFICIAL,
       page: () => const StarMenuOfficialView(),
       binding: StarMenuOfficialBinding(),
+    ),
+    GetPage(
+      name: _Paths.MIX1,
+      page: () => const Mix1View(),
+      binding: Mix1Binding(),
+    ),
+    GetPage(
+      name: _Paths.M3_SHAPES,
+      page: () => const M3ShapesView(),
+      binding: M3ShapesBinding(),
+    ),
+    GetPage(
+      name: _Paths.HOURGLASS_OFFICIAL,
+      page: () => AnimatedHourglass(),
+    ),
+    GetPage(
+      name: _Paths.HOURGLASS_LOADER,
+      page: () => const HourglassLoaderView(),
+      binding: HourglassLoaderBinding(),
     ),
   ];
 }

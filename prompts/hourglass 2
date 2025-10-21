@@ -1,0 +1,19 @@
+Create HourglassLoader that uses HourgldassWidget
+internally. 
+It should display hourglass animation as
+AnimatedHourglass does, but when animation is finished,
+hourglass should be rotated 180 degree and animation
+should restart. 
+
+It should has following parameters (all named
+and optional): 
+1. duration - duration of hourglass animation 
+(default 3 sec)
+2. width (default 100)
+3. height (default 150)
+4. topBottomColor - the color of top and bottom lines
+  (default Color(0xFFA0A0A0).withValues(alpha: 0.6))
+5. glassColor - the color of the hourglass
+   (default Color(0xFFB8E6E8).withValues(alpha: 0.6)) 
+6. sandColor 
+   (default Color(0xFFF4A460))    
