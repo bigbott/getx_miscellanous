@@ -6,6 +6,8 @@ import 'package:getx_miscellanous/app/common/ez/ez_glass_shaped_button.dart';
 import 'package:getx_miscellanous/app/common/ez/ez_shaped_button.dart';
 import 'package:getx_miscellanous/app/presentation/m3-shapes/m3_shapes_controller.dart';
 
+import '../../common/ez/ez_text.dart';
+
 class M3ShapesView extends GetView<M3ShapesController> {
   const M3ShapesView({super.key});
 
@@ -227,9 +229,10 @@ class M3ShapesView extends GetView<M3ShapesController> {
                     color: Colors.cyan.shade900,
                     width: 150,
                     height: 60,
-                    child: Ez3dText(
+                    child: Text(
                       'Click me!',
-                      fontSize: 18,
+                     style: TextStyle(fontSize: 18, )
+                      
                     ),
                   ),
                 ],

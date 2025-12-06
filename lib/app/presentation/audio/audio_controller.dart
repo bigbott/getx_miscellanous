@@ -114,7 +114,7 @@ class AudioController extends GetxController {
       Get.snackbar(
         'Error',
         'Failed to seek to position',
-        snackPosition: SnackPosition.BOTTOM,
+      // snackPosition: SnackPosition.BOTTOM,
       );
       audioPlayer.stop();
       _isPlaying = false;

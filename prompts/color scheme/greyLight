@@ -1,0 +1,7 @@
+Add greyLight ColorScheme. 
+Generate it from colors: 
+surface - #F7F1DE
+primary - #3B4C39
+secondary - #624228
+tertiary - #196329FF
+onSurface - #242424

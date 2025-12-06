@@ -37,6 +37,31 @@ abstract class Routes {
   static const M3_SHAPES = _Paths.M3_SHAPES;
   static const HOURGLASS_OFFICIAL = _Paths.HOURGLASS_OFFICIAL;
   static const HOURGLASS_LOADER = _Paths.HOURGLASS_LOADER;
+  static const IMAGE_BG = _Paths.IMAGE_BG;
+  static const CHECK_THEME = _Paths.CHECK_THEME;
+  static const TYPOGRAPHY_COMPARISON = _Paths.TYPOGRAPHY_COMPARISON;
+  static const THEME_CHOOSER = _Paths.THEME_CHOOSER;
+  static const NOIF = _Paths.NOIF;
+  static const REGULAR = _Paths.NOIF + _Paths.REGULAR;
+  static const VISIBILITY_EXAMPLE = _Paths.NOIF + _Paths.VISIBILITY_EXAMPLE;
+  static const NOVISIBILITY_EXAMPLE = _Paths.NOIF + _Paths.NOVISIBILITY_EXAMPLE;
+  static const STATE_MACHINE = _Paths.NOIF + _Paths.STATE_MACHINE;
+  static const STATE_MAP = _Paths.NOIF + _Paths.STATE_MAP;
+  static const STATE_MACHINE2 = _Paths.NOIF + _Paths.STATE_MACHINE2;
+  static const STATE_MACHINE3 = _Paths.NOIF + _Paths.STATE_MACHINE3;
+  static const LIQUID_GLASS_MENU = _Paths.LIQUID_GLASS_MENU;
+  static const LIQUID_GLASS_EXAMPLE =
+      _Paths.LIQUID_GLASS_MENU + _Paths.LIQUID_GLASS_EXAMPLE;
+  static const LIQUID_GLASS_SHOWCASE =
+      _Paths.LIQUID_GLASS_MENU + _Paths.LIQUID_GLASS_SHOWCASE;
+  static const LIQUID_GLASS_PLAYGROUND =
+      _Paths.LIQUID_GLASS_MENU + _Paths.LIQUID_GLASS_PLAYGROUND;
+  static const REGISTRATION = _Paths.LIQUID_GLASS_MENU + _Paths.REGISTRATION;
+  static const SIGNALS = _Paths.SIGNALS;
+  static const COUNTER = _Paths.SIGNALS + _Paths.COUNTER;
+  static const USER = _Paths.SIGNALS + _Paths.USER;
+  static const SCAFFOLD = _Paths.CHECK_THEME + _Paths.SCAFFOLD;
+  static const EZSCAFFOLD = _Paths.CHECK_THEME + _Paths.EZSCAFFOLD;
 }
 
 abstract class _Paths {
@@ -75,4 +100,26 @@ abstract class _Paths {
   static const M3_SHAPES = '/m3-shapes';
   static const HOURGLASS_OFFICIAL = '/hourglass-official';
   static const HOURGLASS_LOADER = '/hourglass-loader';
+  static const IMAGE_BG = '/image-bg';
+  static const CHECK_THEME = '/check-theme';
+  static const TYPOGRAPHY_COMPARISON = '/typography-comparison';
+  static const THEME_CHOOSER = '/theme-chooser';
+  static const VISIBILITY_EXAMPLE = '/visibility-example';
+  static const NOVISIBILITY_EXAMPLE = '/novisibility-example';
+  static const NOIF = '/noif';
+  static const REGULAR = '/regular';
+  static const STATE_MACHINE = '/state-machine';
+  static const STATE_MAP = '/state-map';
+  static const STATE_MACHINE2 = '/state-machine2';
+  static const STATE_MACHINE3 = '/state-machine3';
+  static const LIQUID_GLASS_MENU = '/liquid-glass-menu';
+  static const LIQUID_GLASS_EXAMPLE = '/liquid-glass-example';
+  static const LIQUID_GLASS_SHOWCASE = '/liquid-glass-showcase';
+  static const LIQUID_GLASS_PLAYGROUND = '/liquid-glass-playground';
+  static const REGISTRATION = '/registration';
+  static const SIGNALS = '/signals';
+  static const COUNTER = '/counter';
+  static const USER = '/user';
+  static const SCAFFOLD = '/scaffold';
+  static const EZSCAFFOLD = '/ezscaffold';
 }
