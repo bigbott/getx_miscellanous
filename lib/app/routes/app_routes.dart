@@ -62,6 +62,11 @@ abstract class Routes {
   static const USER = _Paths.SIGNALS + _Paths.USER;
   static const SCAFFOLD = _Paths.CHECK_THEME + _Paths.SCAFFOLD;
   static const EZSCAFFOLD = _Paths.CHECK_THEME + _Paths.EZSCAFFOLD;
+  static const STEAM_UI = _Paths.STEAM_UI;
+  static const STEAM_REGISTRATION = _Paths.STEAM_UI + _Paths.STEAM_REGISTRATION;
+  static const STEAM_OFFICIAL = _Paths.STEAM_UI + _Paths.STEAM_OFFICIAL;
+  static const GAME_MENU = _Paths.STEAM_UI + _Paths.GAME_MENU;
+  static const LICENSE = _Paths.LICENSE;
 }
 
 abstract class _Paths {
@@ -122,4 +127,9 @@ abstract class _Paths {
   static const USER = '/user';
   static const SCAFFOLD = '/scaffold';
   static const EZSCAFFOLD = '/ezscaffold';
+  static const STEAM_UI = '/steam-ui';
+  static const STEAM_REGISTRATION = '/steam-registration';
+  static const STEAM_OFFICIAL = '/steam-official';
+  static const GAME_MENU = '/game-menu';
+  static const LICENSE = '/license';
 }

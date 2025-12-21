@@ -6,6 +6,7 @@ import 'package:getx_miscellanous/app/common/extensions/device_previewing.dart';
 import 'package:getx_miscellanous/app/common/ez/theme/ez_color_scheme_extension.dart';
 import 'package:getx_miscellanous/app/common/ez/theme/ez_schemes.dart';
 import 'package:getx_miscellanous/app/common/ez/theme/ez_theme_controller.dart';
+import 'package:getx_miscellanous/app/common/license/license_manager.dart';
 
 import 'app/common/ez/theme/ez_theme.dart';
 import 'app/routes/app_pages.dart';
@@ -13,6 +14,7 @@ import 'app/routes/app_pages.dart';
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   Get.put(EzThemeController(), permanent: true);
+  LicenseManager.addToRegistry();
   runApp(MyApp());
 }
 
@@ -37,7 +39,8 @@ class MyApp extends StatelessWidget {
         title: "Application",
         initialRoute: AppPages.INITIAL,
         getPages: AppPages.routes,
-        theme: controller.themeLight,
+        theme: 
+        controller.themeLight,
         //     EzTheme.getIos(
         //   //EzSchemes.greenLight,
         //   colorScheme,
@@ -51,8 +54,8 @@ class MyApp extends StatelessWidget {
         //   Brightness.dark,
         //   'assets/images/background/black_mramor.webp',
         // ),
-        themeMode: //controller.mode,
-            ThemeMode.light,
+       // themeMode: controller.mode,
+           // ThemeMode.light,
         debugShowCheckedModeBanner: false,
       ).withDevicePreview(true);
     });

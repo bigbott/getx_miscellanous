@@ -11,13 +11,12 @@ class ThemeChooserController extends GetxController {
 
   void changeMode() {
     themeController.changeMode();
-    update();
+    //update();
   }
 
   void changeTheme(ThemeModel themeModel) {
     themeController.changeTheme(themeModel);
    // update();
   }
-
 
 }

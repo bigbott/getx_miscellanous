@@ -54,6 +54,8 @@ class HomeView extends GetView<HomeController> {
               NavButton(route: Routes.NOIF, label: 'NOIF'),
               NavButton(route: Routes.LIQUID_GLASS_MENU, label: 'LIQUID_GLASS_MENU'),
               NavButton(route: Routes.SIGNALS, label: 'SIGNALS'),
+              NavButton(route: Routes.STEAM_UI, label: 'STEAM_UI'),
+              NavButton(route: Routes.LICENSE, label: 'LICENSE'),
             ],
           ),
         ),

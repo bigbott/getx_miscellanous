@@ -48,6 +48,8 @@ import '../presentation/image-bg/image_bg_binding.dart';
 import '../presentation/image-bg/image_bg_view.dart';
 import '../presentation/inkwell/inkwell_binding.dart';
 import '../presentation/inkwell/inkwell_view.dart';
+import '../presentation/license/license_binding.dart';
+import '../presentation/license/license_view.dart';
 import '../presentation/liquid-glass-menu/liquid-glass-example/liquid_glass_example_binding.dart';
 import '../presentation/liquid-glass-menu/liquid-glass-example/liquid_glass_example_view.dart';
 import '../presentation/liquid-glass-menu/liquid-glass-playground/liquid_glass_playground_binding.dart';
@@ -401,6 +403,12 @@ class AppPages {
           page: () => UserView(),
         ),
       ],
+    ),
+    
+    GetPage(
+      name: _Paths.LICENSE,
+      page: () => const LicenseView(),
+      binding: LicenseBinding(),
     ),
   ];
 }

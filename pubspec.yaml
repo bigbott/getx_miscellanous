@@ -22,6 +22,7 @@ dependencies:
   #liquid_progress_indicator: ^0.4.0
   liquid_glass_easy: ^1.0.0
   mix: ^1.7.0
+  package_info_plus: ^9.0.0
   pinput: ^5.0.1
   settings_ui: ^2.0.2
   signals: ^6.2.0
@@ -39,6 +40,7 @@ flutter:
     - assets/images/
     - assets/images/background/
     - assets/audio/
+    - assets/licenses/
   fonts:
     - family: OpenSans
       fonts: 
